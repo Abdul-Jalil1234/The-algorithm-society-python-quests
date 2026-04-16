@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+name = input("Enter your name :")
+quest = int(input("Enter your quest"))
+print(f"hello {name} , your are quest {quest}")
