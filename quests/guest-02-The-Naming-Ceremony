@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+hero_name = "Bat man"
+super_power = "Flying"
+print("hello " + hero_name + " you are " + super_power) 
