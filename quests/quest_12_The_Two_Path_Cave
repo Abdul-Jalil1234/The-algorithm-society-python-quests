@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+secret_password = "DragonScale123"
+user_input = input("  Enter the secret password to enter the cave: ")
+if user_input == secret_password:
+    print("Access granted !")
+else:
+    print("Access Denied!")
