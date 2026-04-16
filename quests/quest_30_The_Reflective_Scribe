@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+# First decision: choose direction
+# .strip() removes extra spaces, .lower() makes input case‑insensitive
+choice1 = input("You are at a fork. Go 'left' or 'right'? ").strip().lower()
+
+# Outer if – checks the first condition
+if choice1 == "left":
+    # Only if user went left do we ask the second question
+    choice2 = input("You reach a river. 'swim' or 'wait'? ").strip().lower()
+    
+    # Inner (nested) if – second layer of decision
+    if choice2 == "swim":
+        print("You swim across and find a treasure! You win!")
+    else:
+        # Any choice other than "swim" leads to this outcome
+        print("While waiting, a crocodile finds you. Game over.")
+
+# First alternative path: going right
+elif choice1 == "right":
+    print("You enter a dark cave and get lost forever. Game over.")
+
+# If user types anything other than 'left' or 'right'
+else:
+    print("You hesitate until wild animals surround you. Game over.")
+
