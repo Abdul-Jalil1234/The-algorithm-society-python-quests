@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+def personalized_greeting(name, quest):
+
+    print(f"\n--- The Magic Scroll Unrolls ---")
+    print(f"Welcome, {name}!")
+    print(f"Your noble mission to {quest} has been recorded in the archives.")
+user_name = input("Identify yourself, adventurer: ")
+user_quest = input("What is the purpose of your journey? ")
+
+# Call the function with the user's input
+personalized_greeting(user_name, user_quest)
