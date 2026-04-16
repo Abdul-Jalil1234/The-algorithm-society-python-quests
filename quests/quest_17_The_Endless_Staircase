@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+counter = 0
+while counter < 5:
+    print(f"Climbing stair number {counter}")
+    counter += 1  # This adds 1 to the counter each time
+
+print("You have reached the top of the staircase!")
