@@ -1,0 +1,43 @@
+#!/usr/bin/python3
+def start_mission():
+    print("\n--- MISSION: ABYSS ---")
+    print("You are in a mini-sub at the bottom of the ocean.")
+    print("To the left, there's a dark trench. To the right, a glowing shipwreck.")
+    
+    choice = input("Do you go 'left' or 'right'? ").lower()
+
+    if choice == "left":
+        trench_path()
+    elif choice == "right":
+        shipwreck_path()
+    else:
+        print("You stalled and ran out of oxygen. Try again!")
+        start_mission()
+
+def trench_path():
+    print("\nIt's pitch black. Suddenly, a giant squid blocks your path!")
+    choice = input("Do you 'turn' on the high beams or 'quietly' float by? ").lower()
+
+    if choice == "turn":
+        print("\nENDING 1: The light blinds the squid! You find a hidden underwater city.")
+        print("YOU WIN: You are the first human to discover Atlantis!")
+    else:
+        print("\nThe squid didn't see you, but you got lost in the current.")
+        start_mission()
+
+def shipwreck_path():
+    print("\nYou enter the shipwreck. You see a gold crown and a rusty lever.")
+    choice = input("Do you grab the 'crown' or pull the 'lever'? ").lower()
+
+    if choice == "lever":
+        print("\nENDING 2: The ship's engines roar to life, lifting you to the surface!")
+        print("YOU WIN: You saved the legendary vessel!")
+    elif choice == "crown":
+        print("\nIt's a trap! A cage falls over your sub. You're stuck!")
+        start_mission()
+    else:
+        print("\nIndecision is dangerous underwater.")
+        start_mission()
+
+#This is a function that will Start the game if called.
+start_mission()
