@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# First decision: left or right
+choice1 = input("You are at a fork in the road. Do you go 'left' or 'right'? ").strip().lower()
+
+if choice1 == "left":
+    # Second decision: swim or wait (nested if)
+    choice2 = input("You reach a river. Do you 'swim' across or 'wait' for a boat? ").strip().lower()
+    if choice2 == "swim":
+        print("You swim across and find a hidden treasure chest! You win!")
+    else:
+        print("While waiting, a hungry crocodile finds you. Game over.")
+elif choice1 == "right":
+    print("You walk into a dark cave and get lost forever. Game over.")
+else:
+    print("You stand still until night falls and wild animals surround you. Game over.")
+
